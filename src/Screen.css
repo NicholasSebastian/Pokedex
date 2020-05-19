@@ -1,0 +1,35 @@
+#main-screen {
+  background-color: #394251;
+  border-radius: 6px;
+  width: 90%;
+  height: 72.5%;
+}
+
+#sub-screen {
+  background-color: #394251;
+  border-radius: 6px;
+  width: 90%;
+  height: 120px;
+}
+
+#green-screen {
+  margin-top: 35px;
+  background-color: #627d3b;
+  width: 100%;
+  height: 80px;
+  border-radius: 6px;
+}
+
+#mini-screen-1 {
+  background-color: #394251;
+  border-radius: 6px;
+  width: 47%;
+  height: 100%;
+}
+
+#mini-screen-2 {
+  background-color: #394251;
+  border-radius: 6px;
+  width: 47%;
+  height: 100%;
+}
