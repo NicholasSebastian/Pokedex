@@ -1,32 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
+import { Context } from "./Context";
 import "./App.css";
-import "./Screen.css";
 
-// Instantiate a cached pokedex object.
-const PokedexModule = require("pokeapi-js-wrapper");
-const pokedex = new PokedexModule.Pokedex();
-
-const MainScreen = () => {
-  return <div id="main-screen"></div>;
-};
-
-const SubScreen = () => {
-  return <div id="sub-screen"></div>;
-};
-
-const GreenScreen = () => {
-  return <div id="green-screen"></div>;
-};
-
-const MiniScreen1 = () => {
-  return <div id="mini-screen-1"></div>;
-};
-
-const MiniScreen2 = () => {
-  return <div id="mini-screen-2"></div>;
-};
+import MainScreen from "./MainScreen";
+import SubScreen from "./SubScreen";
+import { GreenScreen, MiniScreen1, MiniScreen2 } from "./SmallScreens";
 
 const App = () => {
+  const [data, setData] = useContext(Context);
+
+  // Back Button functionality.
+  const clearSelection = () =>
+    setData({
+      currentPokemon: null,
+      details: null,
+      extraDetails: null,
+    });
+
+  // Render the physical pokedex.
   return (
     <div id="View">
       <div>
@@ -59,7 +50,7 @@ const App = () => {
                 </div>
                 <div id="main-body">
                   <div id="left-modules">
-                    <div id="circle-module" />
+                    <div id="circle-module" onClick={clearSelection} />
                     <div id="center-modules">
                       <div id="flat-modules">
                         <div style={{ backgroundColor: "#661e1d" }} />

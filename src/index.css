@@ -1,17 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  font-family: "VT323", monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #932b2a;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 .title {
@@ -26,4 +24,10 @@ code {
 
 .title > h2 {
   margin-bottom: 10px;
+  font-size: 34px;
+  line-height: 0.8;
+}
+
+.title > span {
+  font-size: 22px;
 }

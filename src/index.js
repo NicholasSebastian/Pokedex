@@ -4,6 +4,7 @@ import * as serviceWorker from "./serviceWorker";
 
 import "./index.css";
 import App from "./App";
+import { ContextProvider } from "./Context";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +12,9 @@ ReactDOM.render(
       <h2>Pokédex App</h2>
       <span>By Nicholas Sebastian</span>
     </div>
-    <App />
+    <ContextProvider>
+      <App />
+    </ContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
