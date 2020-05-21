@@ -1,5 +1,5 @@
-import React, { useContext, useState, useEffect } from "react";
-import { Context, pokedex } from "./Context";
+import React, { useContext } from "react";
+import { Context } from "./Context";
 import { capitalize } from "./Utils";
 import "./SubScreen.css";
 
